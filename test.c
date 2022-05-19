@@ -10,7 +10,7 @@ void	test(void)
 
 	ptr = ft_malloc(10000);
 	i = 1;
-	while (i < 10000)
+	while (i < 200)
 	{
 		ptr = ft_realloc(ptr, i * 10000);
 		i++;

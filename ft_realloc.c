@@ -14,6 +14,7 @@ void	*ft_malloc(size_t s)
 	ret = malloc(sizeof(size_t) + s);
 	if (!ret)
 		return (NULL);
+	*ret = s;
 	return (&ret[1]);
 }
 
@@ -47,8 +48,6 @@ void	*ft_realloc(void *ptr, size_t size)
 	size_t	i;
 
 	i = 0;
-	if (size == ft_malloc_size(ptr))
-		return (ptr);
 	tmp = ft_malloc(size);
 	if (!tmp)
 	{

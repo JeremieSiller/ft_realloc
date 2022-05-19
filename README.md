@@ -5,7 +5,7 @@
 One of the most annoying things of the 42-core-curriculum was handling reallocation properly, because realloc
 is forbidden in almost every c-project.
 Because of that I've written a small library that mirrors the purpose of realloc. It does not follow the STD and
-is not a real implementation of realloc. It's purpose is more to simply handle reallocation more easily, norme compilant and
+is not a real implementation of realloc. It's purpose is more to simply handle reallocation more easily, following the norme and
 only using free and malloc.
 
 # usage
